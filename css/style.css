@@ -205,7 +205,7 @@ a {
 }
 
 .subjects {
-    padding: 100px 0 150px;
+    padding: 20px 0 150px;
 }
 
 .subjects-title {
@@ -249,15 +249,16 @@ a {
 
 .card {
     text-align: center;
-    border: 1px solid #151515;
-    border-radius: 5px;
+    border: 0.5px solid #8C0909;
+    border-radius: 20px;
     box-shadow: 0 .5rem 1rem rgba(21, 21, 21, .2);
 }
 
 .card__img {
-   border-radius: 3px;
-   display: block;
-   max-height: 250px;
+    border-radius: 20px;
+    display: block;
+    max-height: 230px;
+    margin: 10px;
 }
 
 .card__content {
@@ -289,9 +290,20 @@ a {
     color: #fff;
     border-radius: 25px;
     border: none;
-    padding-bottom: 6px;
+    padding-bottom: px;
     font-size: 18px;
     font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.pdf {
+    justify-content: start;
+    max-width: 40px;
+}
+
+.file-btn {
+    font-size: 18px;
+    font-weight: 400;
 }
 
 .hidden {
