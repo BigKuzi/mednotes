@@ -12,6 +12,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/materials.css">
     <title>MEDNOTES</title>
 </head>
 
@@ -28,6 +29,11 @@
                     </a>
                     <!-- NAVBAR -->
                     <nav class="menu">
+                        <button class="menu__btn">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </button>
                         <ul class="menu__list">
                             <li class="menu__list-item">
                                 <a href="index.html" class="menu__list-link">Главная</a>
@@ -110,7 +116,7 @@
                                                                 <li class="list-group-item">
                                                                     
                                                                     <h5 class="file-name">
-                                                                        <img class="pdf" src="/images/pdf.svg" alt="">
+                                                                        <img class="pdf" src="images/pdf.svg" alt="">
                                                                         Борисов</h5>
                                                                     <div class="file-btn">
                                                                         <a class="file-view" href="files/subjects/mb/books/Borisov.pdf" target="_blank">Посмотреть</a>
@@ -118,28 +124,36 @@
                                                                     </div>
                                                                 </li>
                                                                 <li class="list-group-item">
-                                                                    <h5 class="file-name">Поздеев</h5>
+                                                                    <h5 class="file-name">
+                                                                        <img class="cross" src="images/cross.svg" alt="">
+                                                                        Поздеев</h5>
                                                                     <div class="file-btn">
                                                                         <a class="file-view" href="files/subjects/mb/books/Pozdeev2005.pdf" target="_blank">Посмотреть</a>
                                                                         <a class="file-download" href="files/subjects/mb/books/Pozdeev2005.pdf" download="">Скачать</a>
                                                                     </div>
                                                                 </li>
                                                                 <li class="list-group-item">
-                                                                    <h5 class="file-name">Зверев</h5>
+                                                                    <h5 class="file-name">
+                                                                        <img class="cross" src="images/cross.svg" alt="">
+                                                                        Зверев</h5>
                                                                     <div class="file-btn">
                                                                         <a class="file-view" href="files/subjects/mb/books/Zverev.pdf" target="_blank">Посмотреть</a>
                                                                         <a class="file-download" href="files/subjects/mb/books/Zverev.pdf" download="">Скачать</a>
                                                                     </div>
                                                                 </li>
                                                                 <li class="list-group-item">
-                                                                    <h5 class="file-name">Кафарская</h5>
+                                                                    <h5 class="file-name">
+                                                                        <img class="cross" src="images/cross.svg" alt="">
+                                                                        Кафарская</h5>
                                                                     <div class="file-btn">
                                                                         <a class="file-view" href="files/subjects/mb/books/Kafarskaya.pdf" target="_blank">Посмотреть</a>
                                                                         <a class="file-download" href="files/subjects/mb/books/Kafarskaya.pdf" download="">Скачать</a>
                                                                     </div>
                                                                 </li>
                                                                 <li class="list-group-item">
-                                                                    <h5 class="file-name">Воробьев</h5>
+                                                                    <h5 class="file-name">
+                                                                        <img class="cross" src="images/cross.svg" alt="">
+                                                                        Воробьев</h5>
                                                                     <div class="file-btn">
                                                                         <a class="file-view" href="files/subjects/mb/books/Vorobyov.pdf" target="_blank">Посмотреть</a>
                                                                         <a class="file-download" href="files/subjects/mb/books/Vorobyov.pdf" download="">Скачать</a>
@@ -389,6 +403,491 @@
                                         </div>
                                     </div>
                                 </div>
+                                <div class="card">
+                                    <img src="images/" alt="" class="card__img">
+                                    <div class="card__content">
+                                        <h4 class="card__title">Патофизиология</h4>
+                                        <!-- CARD BUTTON -->
+                                        <div class="card-btn">
+
+                                        <button type="button" class="btn btn-dark" data-bs-toggle="modal"
+                                        data-bs-target="#exampleModal">
+                                        Показать файлы
+                                    </button>
+
+                                    <!-- Modal -->
+                                    <div class="modal fade" id="exampleModal" tabindex="-1"
+                                        aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                        <div class="modal-dialog modal-lg">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <h1 class="modal-title fs-5" id="exampleModalLabel">Материалы
+                                                    </h1>
+                                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                        aria-label="Close"></button>
+                                                </div>
+                                                <div class="modal-body">
+                                                    <!-- CARD CONTENT -->
+                                                    <ul class="list-group list-group-horizontal-xl mb-3">
+                                                        <li class="list-group-item" data-tab="tab-1">Учебники</li>
+                                                        <li class="list-group-item" data-tab="tab-2">От кафедры</li>
+                                                        <li class="list-group-item" data-tab="tab-3">Другое</li>
+                                                    </ul>
+                                                
+                                                    <div class="card p-3" data-tab-content id="tab-1">
+                                                        <h3>Учебники</h3>
+                                                        <p>
+                                                            <ul class="list-group list-group-flush">
+                                                                <li class="list-group-item">
+                                                                    
+                                                                    <h5 class="file-name">
+                                                                        <img class="pdf" src="images/pdf.svg" alt="">
+                                                                        Борисов</h5>
+                                                                    <div class="file-btn">
+                                                                        <a class="file-view" href="files/subjects/mb/books/Borisov.pdf" target="_blank">Посмотреть</a>
+                                                                        <a class="file-download" href="files/subjects/mb/books/Borisov.pdf" download="">Скачать</a>
+                                                                    </div>
+                                                                </li>
+                                                                <li class="list-group-item">
+                                                                    <h5 class="file-name">
+                                                                        <img class="cross" src="images/cross.svg" alt="">
+                                                                        Поздеев</h5>
+                                                                    <div class="file-btn">
+                                                                        <a class="file-view" href="files/subjects/mb/books/Pozdeev2005.pdf" target="_blank">Посмотреть</a>
+                                                                        <a class="file-download" href="files/subjects/mb/books/Pozdeev2005.pdf" download="">Скачать</a>
+                                                                    </div>
+                                                                </li>
+                                                                <li class="list-group-item">
+                                                                    <h5 class="file-name">
+                                                                        <img class="cross" src="images/cross.svg" alt="">
+                                                                        Зверев</h5>
+                                                                    <div class="file-btn">
+                                                                        <a class="file-view" href="files/subjects/mb/books/Zverev.pdf" target="_blank">Посмотреть</a>
+                                                                        <a class="file-download" href="files/subjects/mb/books/Zverev.pdf" download="">Скачать</a>
+                                                                    </div>
+                                                                </li>
+                                                                <li class="list-group-item">
+                                                                    <h5 class="file-name">
+                                                                        <img class="cross" src="images/cross.svg" alt="">
+                                                                        Кафарская</h5>
+                                                                    <div class="file-btn">
+                                                                        <a class="file-view" href="files/subjects/mb/books/Kafarskaya.pdf" target="_blank">Посмотреть</a>
+                                                                        <a class="file-download" href="files/subjects/mb/books/Kafarskaya.pdf" download="">Скачать</a>
+                                                                    </div>
+                                                                </li>
+                                                                <li class="list-group-item">
+                                                                    <h5 class="file-name">
+                                                                        <img class="cross" src="images/cross.svg" alt="">
+                                                                        Воробьев</h5>
+                                                                    <div class="file-btn">
+                                                                        <a class="file-view" href="files/subjects/mb/books/Vorobyov.pdf" target="_blank">Посмотреть</a>
+                                                                        <a class="file-download" href="files/subjects/mb/books/Vorobyov.pdf" download="">Скачать</a>
+                                                                    </div>
+                                                                </li>
+                                                              </ul>
+                                                        </p>
+                                                    </div>
+                                                
+                                                    <div class="card p-3 hidden" data-tab-content id="tab-2">
+                                                        <h3>Методички</h3>
+                                                        <p>
+                                                            <ul class="list-group list-group-flush">
+                                                                <li class="list-group-item">An item</li>
+                                                                <li class="list-group-item">A second item</li>
+                                                                <li class="list-group-item">A third item</li>
+                                                                <li class="list-group-item">A fourth item</li>
+                                                                <li class="list-group-item">And a fifth one</li>
+                                                              </ul>
+                                                        </p>
+                                                    </div>
+                                                
+                                                    <div class="card p-3 hidden" data-tab-content id="tab-3">
+                                                        <h3>Другое</h3>
+                                                        <p>
+                                                            <ul class="list-group list-group-flush">
+                                                                <li class="list-group-item">An item</li>
+                                                                <li class="list-group-item">A second item</li>
+                                                                <li class="list-group-item">A third item</li>
+                                                                <li class="list-group-item">A fourth item</li>
+                                                                <li class="list-group-item">And a fifth one</li>
+                                                              </ul>
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button type="button" class="btn btn-secondary"
+                                                        data-bs-dismiss="modal">Close</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <img src="images/" alt="" class="card__img">
+                                    <div class="card__content">
+                                        <h4 class="card__title">Патологическая анатомия</h4>
+                                        <!-- CARD BUTTON -->
+                                        <div class="card-btn">
+
+                                        <button type="button" class="btn btn-dark" data-bs-toggle="modal"
+                                        data-bs-target="#exampleModal">
+                                        Показать файлы
+                                    </button>
+
+                                    <!-- Modal -->
+                                    <div class="modal fade" id="exampleModal" tabindex="-1"
+                                        aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                        <div class="modal-dialog modal-lg">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <h1 class="modal-title fs-5" id="exampleModalLabel">Материалы
+                                                    </h1>
+                                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                        aria-label="Close"></button>
+                                                </div>
+                                                <div class="modal-body">
+                                                    <!-- CARD CONTENT -->
+                                                    <ul class="list-group list-group-horizontal-xl mb-3">
+                                                        <li class="list-group-item" data-tab="tab-1">Учебники</li>
+                                                        <li class="list-group-item" data-tab="tab-2">От кафедры</li>
+                                                        <li class="list-group-item" data-tab="tab-3">Другое</li>
+                                                    </ul>
+                                                
+                                                    <div class="card p-3" data-tab-content id="tab-1">
+                                                        <h3>Учебники</h3>
+                                                        <p>
+                                                            <ul class="list-group list-group-flush">
+                                                                <li class="list-group-item">
+                                                                    
+                                                                    <h5 class="file-name">
+                                                                        <img class="pdf" src="images/pdf.svg" alt="">
+                                                                        Борисов</h5>
+                                                                    <div class="file-btn">
+                                                                        <a class="file-view" href="files/subjects/mb/books/Borisov.pdf" target="_blank">Посмотреть</a>
+                                                                        <a class="file-download" href="files/subjects/mb/books/Borisov.pdf" download="">Скачать</a>
+                                                                    </div>
+                                                                </li>
+                                                                <li class="list-group-item">
+                                                                    <h5 class="file-name">
+                                                                        <img class="cross" src="images/cross.svg" alt="">
+                                                                        Поздеев</h5>
+                                                                    <div class="file-btn">
+                                                                        <a class="file-view" href="files/subjects/mb/books/Pozdeev2005.pdf" target="_blank">Посмотреть</a>
+                                                                        <a class="file-download" href="files/subjects/mb/books/Pozdeev2005.pdf" download="">Скачать</a>
+                                                                    </div>
+                                                                </li>
+                                                                <li class="list-group-item">
+                                                                    <h5 class="file-name">
+                                                                        <img class="cross" src="images/cross.svg" alt="">
+                                                                        Зверев</h5>
+                                                                    <div class="file-btn">
+                                                                        <a class="file-view" href="files/subjects/mb/books/Zverev.pdf" target="_blank">Посмотреть</a>
+                                                                        <a class="file-download" href="files/subjects/mb/books/Zverev.pdf" download="">Скачать</a>
+                                                                    </div>
+                                                                </li>
+                                                                <li class="list-group-item">
+                                                                    <h5 class="file-name">
+                                                                        <img class="cross" src="images/cross.svg" alt="">
+                                                                        Кафарская</h5>
+                                                                    <div class="file-btn">
+                                                                        <a class="file-view" href="files/subjects/mb/books/Kafarskaya.pdf" target="_blank">Посмотреть</a>
+                                                                        <a class="file-download" href="files/subjects/mb/books/Kafarskaya.pdf" download="">Скачать</a>
+                                                                    </div>
+                                                                </li>
+                                                                <li class="list-group-item">
+                                                                    <h5 class="file-name">
+                                                                        <img class="cross" src="images/cross.svg" alt="">
+                                                                        Воробьев</h5>
+                                                                    <div class="file-btn">
+                                                                        <a class="file-view" href="files/subjects/mb/books/Vorobyov.pdf" target="_blank">Посмотреть</a>
+                                                                        <a class="file-download" href="files/subjects/mb/books/Vorobyov.pdf" download="">Скачать</a>
+                                                                    </div>
+                                                                </li>
+                                                              </ul>
+                                                        </p>
+                                                    </div>
+                                                
+                                                    <div class="card p-3 hidden" data-tab-content id="tab-2">
+                                                        <h3>Методички</h3>
+                                                        <p>
+                                                            <ul class="list-group list-group-flush">
+                                                                <li class="list-group-item">An item</li>
+                                                                <li class="list-group-item">A second item</li>
+                                                                <li class="list-group-item">A third item</li>
+                                                                <li class="list-group-item">A fourth item</li>
+                                                                <li class="list-group-item">And a fifth one</li>
+                                                              </ul>
+                                                        </p>
+                                                    </div>
+                                                
+                                                    <div class="card p-3 hidden" data-tab-content id="tab-3">
+                                                        <h3>Другое</h3>
+                                                        <p>
+                                                            <ul class="list-group list-group-flush">
+                                                                <li class="list-group-item">An item</li>
+                                                                <li class="list-group-item">A second item</li>
+                                                                <li class="list-group-item">A third item</li>
+                                                                <li class="list-group-item">A fourth item</li>
+                                                                <li class="list-group-item">And a fifth one</li>
+                                                              </ul>
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button type="button" class="btn btn-secondary"
+                                                        data-bs-dismiss="modal">Close</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <img src="images/" alt="" class="card__img">
+                                    <div class="card__content">
+                                        <h4 class="card__title">Лучевая диагностика</h4>
+                                        <!-- CARD BUTTON -->
+                                        <div class="card-btn">
+
+                                        <button type="button" class="btn btn-dark" data-bs-toggle="modal"
+                                        data-bs-target="#exampleModal">
+                                        Показать файлы
+                                    </button>
+
+                                    <!-- Modal -->
+                                    <div class="modal fade" id="exampleModal" tabindex="-1"
+                                        aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                        <div class="modal-dialog modal-lg">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <h1 class="modal-title fs-5" id="exampleModalLabel">Материалы
+                                                    </h1>
+                                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                        aria-label="Close"></button>
+                                                </div>
+                                                <div class="modal-body">
+                                                    <!-- CARD CONTENT -->
+                                                    <ul class="list-group list-group-horizontal-xl mb-3">
+                                                        <li class="list-group-item" data-tab="tab-1">Учебники</li>
+                                                        <li class="list-group-item" data-tab="tab-2">От кафедры</li>
+                                                        <li class="list-group-item" data-tab="tab-3">Другое</li>
+                                                    </ul>
+                                                
+                                                    <div class="card p-3" data-tab-content id="tab-1">
+                                                        <h3>Учебники</h3>
+                                                        <p>
+                                                            <ul class="list-group list-group-flush">
+                                                                <li class="list-group-item">
+                                                                    
+                                                                    <h5 class="file-name">
+                                                                        <img class="pdf" src="images/pdf.svg" alt="">
+                                                                        Борисов</h5>
+                                                                    <div class="file-btn">
+                                                                        <a class="file-view" href="files/subjects/mb/books/Borisov.pdf" target="_blank">Посмотреть</a>
+                                                                        <a class="file-download" href="files/subjects/mb/books/Borisov.pdf" download="">Скачать</a>
+                                                                    </div>
+                                                                </li>
+                                                                <li class="list-group-item">
+                                                                    <h5 class="file-name">
+                                                                        <img class="cross" src="images/cross.svg" alt="">
+                                                                        Поздеев</h5>
+                                                                    <div class="file-btn">
+                                                                        <a class="file-view" href="files/subjects/mb/books/Pozdeev2005.pdf" target="_blank">Посмотреть</a>
+                                                                        <a class="file-download" href="files/subjects/mb/books/Pozdeev2005.pdf" download="">Скачать</a>
+                                                                    </div>
+                                                                </li>
+                                                                <li class="list-group-item">
+                                                                    <h5 class="file-name">
+                                                                        <img class="cross" src="images/cross.svg" alt="">
+                                                                        Зверев</h5>
+                                                                    <div class="file-btn">
+                                                                        <a class="file-view" href="files/subjects/mb/books/Zverev.pdf" target="_blank">Посмотреть</a>
+                                                                        <a class="file-download" href="files/subjects/mb/books/Zverev.pdf" download="">Скачать</a>
+                                                                    </div>
+                                                                </li>
+                                                                <li class="list-group-item">
+                                                                    <h5 class="file-name">
+                                                                        <img class="cross" src="images/cross.svg" alt="">
+                                                                        Кафарская</h5>
+                                                                    <div class="file-btn">
+                                                                        <a class="file-view" href="files/subjects/mb/books/Kafarskaya.pdf" target="_blank">Посмотреть</a>
+                                                                        <a class="file-download" href="files/subjects/mb/books/Kafarskaya.pdf" download="">Скачать</a>
+                                                                    </div>
+                                                                </li>
+                                                                <li class="list-group-item">
+                                                                    <h5 class="file-name">
+                                                                        <img class="cross" src="images/cross.svg" alt="">
+                                                                        Воробьев</h5>
+                                                                    <div class="file-btn">
+                                                                        <a class="file-view" href="files/subjects/mb/books/Vorobyov.pdf" target="_blank">Посмотреть</a>
+                                                                        <a class="file-download" href="files/subjects/mb/books/Vorobyov.pdf" download="">Скачать</a>
+                                                                    </div>
+                                                                </li>
+                                                              </ul>
+                                                        </p>
+                                                    </div>
+                                                
+                                                    <div class="card p-3 hidden" data-tab-content id="tab-2">
+                                                        <h3>Методички</h3>
+                                                        <p>
+                                                            <ul class="list-group list-group-flush">
+                                                                <li class="list-group-item">An item</li>
+                                                                <li class="list-group-item">A second item</li>
+                                                                <li class="list-group-item">A third item</li>
+                                                                <li class="list-group-item">A fourth item</li>
+                                                                <li class="list-group-item">And a fifth one</li>
+                                                              </ul>
+                                                        </p>
+                                                    </div>
+                                                
+                                                    <div class="card p-3 hidden" data-tab-content id="tab-3">
+                                                        <h3>Другое</h3>
+                                                        <p>
+                                                            <ul class="list-group list-group-flush">
+                                                                <li class="list-group-item">An item</li>
+                                                                <li class="list-group-item">A second item</li>
+                                                                <li class="list-group-item">A third item</li>
+                                                                <li class="list-group-item">A fourth item</li>
+                                                                <li class="list-group-item">And a fifth one</li>
+                                                              </ul>
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button type="button" class="btn btn-secondary"
+                                                        data-bs-dismiss="modal">Close</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card pediatrics">
+                                    <img src="images/" alt="" class="card__img">
+                                    <div class="card__content">
+                                        <h4 class="card__title">Пропедевтика детских болезней</h4>
+                                        <!-- CARD BUTTON -->
+                                        <div class="card-btn">
+
+                                        <button type="button" class="btn btn-dark" data-bs-toggle="modal"
+                                        data-bs-target="#exampleModal">
+                                        Показать файлы
+                                    </button>
+
+                                    <!-- Modal -->
+                                    <div class="modal fade" id="exampleModal" tabindex="-1"
+                                        aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                        <div class="modal-dialog modal-lg">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <h1 class="modal-title fs-5" id="exampleModalLabel">Материалы
+                                                    </h1>
+                                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                        aria-label="Close"></button>
+                                                </div>
+                                                <div class="modal-body">
+                                                    <!-- CARD CONTENT -->
+                                                    <ul class="list-group list-group-horizontal-xl mb-3">
+                                                        <li class="list-group-item" data-tab="tab-1">Учебники</li>
+                                                        <li class="list-group-item" data-tab="tab-2">От кафедры</li>
+                                                        <li class="list-group-item" data-tab="tab-3">Другое</li>
+                                                    </ul>
+                                                
+                                                    <div class="card p-3" data-tab-content id="tab-1">
+                                                        <h3>Учебники</h3>
+                                                        <p>
+                                                            <ul class="list-group list-group-flush">
+                                                                <li class="list-group-item">
+                                                                    
+                                                                    <h5 class="file-name">
+                                                                        <img class="pdf" src="images/pdf.svg" alt="">
+                                                                        Борисов</h5>
+                                                                    <div class="file-btn">
+                                                                        <a class="file-view" href="files/subjects/mb/books/Borisov.pdf" target="_blank">Посмотреть</a>
+                                                                        <a class="file-download" href="files/subjects/mb/books/Borisov.pdf" download="">Скачать</a>
+                                                                    </div>
+                                                                </li>
+                                                                <li class="list-group-item">
+                                                                    <h5 class="file-name">
+                                                                        <img class="cross" src="images/cross.svg" alt="">
+                                                                        Поздеев</h5>
+                                                                    <div class="file-btn">
+                                                                        <a class="file-view" href="files/subjects/mb/books/Pozdeev2005.pdf" target="_blank">Посмотреть</a>
+                                                                        <a class="file-download" href="files/subjects/mb/books/Pozdeev2005.pdf" download="">Скачать</a>
+                                                                    </div>
+                                                                </li>
+                                                                <li class="list-group-item">
+                                                                    <h5 class="file-name">
+                                                                        <img class="cross" src="images/cross.svg" alt="">
+                                                                        Зверев</h5>
+                                                                    <div class="file-btn">
+                                                                        <a class="file-view" href="files/subjects/mb/books/Zverev.pdf" target="_blank">Посмотреть</a>
+                                                                        <a class="file-download" href="files/subjects/mb/books/Zverev.pdf" download="">Скачать</a>
+                                                                    </div>
+                                                                </li>
+                                                                <li class="list-group-item">
+                                                                    <h5 class="file-name">
+                                                                        <img class="cross" src="images/cross.svg" alt="">
+                                                                        Кафарская</h5>
+                                                                    <div class="file-btn">
+                                                                        <a class="file-view" href="files/subjects/mb/books/Kafarskaya.pdf" target="_blank">Посмотреть</a>
+                                                                        <a class="file-download" href="files/subjects/mb/books/Kafarskaya.pdf" download="">Скачать</a>
+                                                                    </div>
+                                                                </li>
+                                                                <li class="list-group-item">
+                                                                    <h5 class="file-name">
+                                                                        <img class="cross" src="images/cross.svg" alt="">
+                                                                        Воробьев</h5>
+                                                                    <div class="file-btn">
+                                                                        <a class="file-view" href="files/subjects/mb/books/Vorobyov.pdf" target="_blank">Посмотреть</a>
+                                                                        <a class="file-download" href="files/subjects/mb/books/Vorobyov.pdf" download="">Скачать</a>
+                                                                    </div>
+                                                                </li>
+                                                              </ul>
+                                                        </p>
+                                                    </div>
+                                                
+                                                    <div class="card p-3 hidden" data-tab-content id="tab-2">
+                                                        <h3>Методички</h3>
+                                                        <p>
+                                                            <ul class="list-group list-group-flush">
+                                                                <li class="list-group-item">An item</li>
+                                                                <li class="list-group-item">A second item</li>
+                                                                <li class="list-group-item">A third item</li>
+                                                                <li class="list-group-item">A fourth item</li>
+                                                                <li class="list-group-item">And a fifth one</li>
+                                                              </ul>
+                                                        </p>
+                                                    </div>
+                                                
+                                                    <div class="card p-3 hidden" data-tab-content id="tab-3">
+                                                        <h3>Другое</h3>
+                                                        <p>
+                                                            <ul class="list-group list-group-flush">
+                                                                <li class="list-group-item">An item</li>
+                                                                <li class="list-group-item">A second item</li>
+                                                                <li class="list-group-item">A third item</li>
+                                                                <li class="list-group-item">A fourth item</li>
+                                                                <li class="list-group-item">And a fifth one</li>
+                                                              </ul>
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button type="button" class="btn btn-secondary"
+                                                        data-bs-dismiss="modal">Close</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
                             </div>
                             <div class="tabs__content-item" id="content-4">4</div>
                             <div class="tabs__content-item" id="content-5">5</div>
@@ -472,6 +971,7 @@
         integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous">
         </script>
     <script src="js/main.js"></script>
+    <script src="js/materials.js"></script>
 </body>
 
 </html>
