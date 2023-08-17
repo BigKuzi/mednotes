@@ -1,28 +1,27 @@
-// Materials
+// Sort
 
-const tabItem = document.querySelectorAll('.tabs__btn-item')
-const tabContent = document.querySelectorAll('.tabs__content-item')
+const filterBox = document.querySelectorAll('.card');
+    subjectsItems = document.querySelectorAll('.course')
 
-tabItem.forEach(function(element) {
-    element.addEventListener( 'click', open)
-})
+document.querySelector('.subjects-nav').addEventListener('click', event => {
+    if (event.target.tagName !== 'LI') return false;
 
-function open(evt) {
-    const tabTarget = evt.currentTarget;
-    const button = tabTarget.dataset.button;
+    let filterClass = event.target.dataset['f'];
 
-    tabItem.forEach(function(item){
-        item.classList.remove('tabs__btn-item-active');
+    const targetSubject = event.target
+
+    subjectsItems.forEach(subjectItem => subjectItem.classList.remove('subjects-active'))
+    targetSubject.classList.add('subjects-active')
+    
+    filterBox.forEach (elem => {
+        elem.classList.remove('hide');
+        if (!elem.classList.contains(filterClass)&& filterClass!== 'all') {
+            elem.classList.add('hide');
+        }
     });
+    
 
-    tabTarget.classList.add('tabs__btn-item-active');
-
-    tabContent.forEach(function(item){
-        item.classList.remove('tabs__content-item-active');
-    });
-
-    document.querySelector(`#${button}`).classList.add('tabs__content-item-active');
-}
+});
 
 // Tabs
 

@@ -3,6 +3,7 @@ html,
 body {
     height: 100%;
     box-sizing: border-box;
+    font-family: sans-serif;
 }
 
 *, *::after, *::before {
@@ -68,6 +69,7 @@ a {
 .menu__list {
     display: flex;
     gap: 35px;
+    margin-bottom: 10px;
 }
 
 .menu__list-item {
@@ -150,6 +152,7 @@ a {
 }
 
 .swiper-slide {
+    filter: brightness(60%);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
