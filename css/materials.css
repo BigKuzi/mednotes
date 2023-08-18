@@ -87,6 +87,7 @@
     width: 320px;
     overflow: hidden;
     transition: 0.5s all;
+    margin: 0 auto;
 }
 
 .card__img {
@@ -367,6 +368,13 @@
         width: 90%;
     }
 
+}
+
+@media (max-width:768px) {
+    .subjects-cards {
+        flex-direction: column;
+        align-items: center;
+    }
 }
 
 @media (max-width: 600px){
