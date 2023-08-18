@@ -10,10 +10,13 @@
 }
 
 .subjects-cards {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    max-width: 1024px;
+    margin: 0 auto;
     gap: 30px;
-    justify-items: center;
 }   
 
 .subjects-courses {
@@ -51,9 +54,8 @@
 }
 
 .hide {
-    animation: a1 .3s ease;
-    animation-name: a1;
-    animation-duration: 0.000001s;
+    animation-name: hide;
+    animation-duration: 0.5s;
     animation-fill-mode: forwards;
 }
 
@@ -71,7 +73,7 @@
       font-size: 0;
       margin: 0;
     }
-} */
+}
 
 /* Cards */
 
