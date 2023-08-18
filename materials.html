@@ -11,6 +11,10 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
         rel="stylesheet"> -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/materials.css">
     <title>MEDNOTES</title>
@@ -64,17 +68,19 @@
                         Выбери предмет
                     </h2>
                     
+                    <!-- Courses -->
                     <nav class="subjects-nav">
-                        <ul class="subjects-courses">
-                            <li data-f="all" class="course course-all subjects-active">Всё</li>
-                            <li data-f="course-1" class="course course-1">1 курс</li>
-                            <li data-f="course-2" class="course course-2">2 курс</li>
-                            <li data-f="course-3" class="course course-3">3 курс</li>
-                            <li data-f="course-4" class="course course-4">4 курс</li>
-                            <li data-f="course-5" class="course course-5">5 курс</li>
-                            <li data-f="course-6" class="course course-6">6 курс</li>
-                        </ul>
+                        <div class="subjects-courses">
+                            <button data-filter="all" class="course cours-all course-active">Всё</button>
+                            <button data-filter="course-1" class="course course-1">1 курс</button>
+                            <button data-filter="course-2" class="course course-2">2 курс</button>
+                            <button data-filter="course-3" class="course course-3">3 курс</button>
+                            <button data-filter="course-4" class="course course-4">4 курс</button>
+                            <button data-filter="course-5" class="course course-5">5 курс</button>
+                            <button data-filter="course-6" class="course course-6">6 курс</button>
+                        </div>
                     </nav>
+
                     <!-- Cards -->
                     <div class="subjects-cards">
 
@@ -140,7 +146,7 @@
 
                         <div class="card course-2">
                             <div class="card__content">
-                                <img src="images/covers/phisiology.jpg" alt="" class="card__img">
+                                <img src="images/covers/physiology.jpg" alt="" class="card__img">
                                 <h4 class="card__title">Нормальная физиология</h4>
                             </div>
                             <div class="card__footer">
@@ -200,7 +206,7 @@
 
                         <div class="card course-3 course-4">
                             <div class="card__content">
-                                <img src="images/covers/pharm.jpg" alt="" class="card__img">
+                                <img src="images/covers/topanatomy.jpg" alt="" class="card__img">
                                 <h4 class="card__title">Топографическая анатомия</h4>
                             </div>
                             <div class="card__footer">
@@ -210,7 +216,7 @@
 
                         <div class="card course-3 course-4">
                             <div class="card__content">
-                                <img src="images/covers/pharm.jpg" alt="" class="card__img">
+                                <img src="images/covers/factherapy.jpg" alt="" class="card__img">
                                 <h4 class="card__title">Факультетская терапия</h4>
                             </div>
                             <div class="card__footer">
@@ -220,7 +226,7 @@
 
                         <div class="card course-3">
                             <div class="card__content">
-                                <img src="images/covers/pharm.jpg" alt="" class="card__img">
+                                <img src="images/covers/pharmacology.jpg" alt="" class="card__img">
                                 <h4 class="card__title">Фармакология</h4>
                             </div>
                             <div class="card__footer">
@@ -230,7 +236,7 @@
 
                         <div class="card course-2">
                             <div class="card__content">
-                                <img src="images/covers/pharm.jpg" alt="" class="card__img">
+                                <img src="images/covers/philosophy.jpg" alt="" class="card__img">
                                 <h4 class="card__title">Философия</h4>
                             </div>
                             <div class="card__footer">
@@ -240,7 +246,7 @@
 
                         <div class="card course-1">
                             <div class="card__content">
-                                <img src="images/covers/pharm.jpg" alt="" class="card__img">
+                                <img src="images/covers/chemistry.jpg" alt="" class="card__img">
                                 <h4 class="card__title">Химия</h4>
                             </div>
                             <div class="card__footer">
@@ -254,6 +260,111 @@
 
                     <!-- Modals -->
                     <div class="modal">
+
+                        <div class="modal__container" data-target="anatomy">
+                            <div class="modal-close"><img src="images/cross-black.svg" alt=""></div>
+                            <div class="modal-content">
+                                <ul class="list-group">
+                                    <li class="list-group-item" data-tab="anat-1">Учебники</li>
+                                    <li class="list-group-item" data-tab="anat-2">От кафедры</li>
+                                    <li class="list-group-item" data-tab="anat-3">Другое</li>
+                                </ul>
+
+                                <div class="modal__tab" data-tab-content id="anat-1">
+                                    <div class="modal__tab-content">
+                                    </div>
+                                </div>
+
+                                <div class="modal__tab hidden" data-tab-content id="anat-2">
+                                    <div class="modal__tab-content">
+                                    </div>
+                                </div>
+
+                                <div class="modal__tab hidden" data-tab-content id="anat-3">
+                                    <div class="modal__tab-content">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="modal__container" data-target="biology">
+                            <div class="modal-close"><img src="images/cross-black.svg" alt=""></div>
+                            <div class="modal-content">
+                                <ul class="list-group">
+                                    <li class="list-group-item" data-tab="bio-1">Учебники</li>
+                                    <li class="list-group-item" data-tab="bio-2">От кафедры</li>
+                                    <li class="list-group-item" data-tab="bio-3">Другое</li>
+                                </ul>
+
+                                <div class="modal__tab" data-tab-content id="bio-1">
+                                    <div class="modal__tab-content">
+                                    </div>
+                                </div>
+
+                                <div class="modal__tab hidden" data-tab-content id="bio-2">
+                                    <div class="modal__tab-content">
+                                    </div>
+                                </div>
+
+                                <div class="modal__tab hidden" data-tab-content id="bio-3">
+                                    <div class="modal__tab-content">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="modal__container" data-target="biochemistry">
+                            <div class="modal-close"><img src="images/cross-black.svg" alt=""></div>
+                            <div class="modal-content">
+                                <ul class="list-group">
+                                    <li class="list-group-item" data-tab="biochem-1">Учебники</li>
+                                    <li class="list-group-item" data-tab="biochem-2">От кафедры</li>
+                                    <li class="list-group-item" data-tab="biochem-3">Другое</li>
+                                </ul>
+
+                                <div class="modal__tab" data-tab-content id="biochem-1">
+                                    <div class="modal__tab-content">
+                                    </div>
+                                </div>
+
+                                <div class="modal__tab hidden" data-tab-content id="biochem-2">
+                                    <div class="modal__tab-content">
+                                    </div>
+                                </div>
+
+                                <div class="modal__tab hidden" data-tab-content id="biochem-3">
+                                    <div class="modal__tab-content">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="modal__container" data-target="hygiene">
+                            <div class="modal-close"><img src="images/cross-black.svg" alt=""></div>
+                            <div class="modal-content">
+                                <ul class="list-group">
+                                    <li class="list-group-item" data-tab="hygiene-1">Учебники</li>
+                                    <li class="list-group-item" data-tab="hygiene-2">От кафедры</li>
+                                    <li class="list-group-item" data-tab="hygiene-3">Другое</li>
+                                </ul>
+
+                                <div class="modal__tab" data-tab-content id="hygiene-1">
+                                    <div class="modal__tab-content">
+                                    </div>
+                                </div>
+
+                                <div class="modal__tab hidden" data-tab-content id="hygiene-2">
+                                    <div class="modal__tab-content">
+                                    </div>
+                                </div>
+
+                                <div class="modal__tab hidden" data-tab-content id="hygiene-3">
+                                    <div class="modal__tab-content">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
                         <div class="modal__container" data-target="histology">
                             <div class="modal-close"><img src="images/cross-black.svg" alt=""></div>
                             <div class="modal-content">
@@ -295,7 +406,319 @@
                                     </div>
                                 </div>
                             </div>
-                        </div>                        
+                        </div>
+                        
+                        <div class="modal__container" data-target="microbiology">
+                            <div class="modal-close"><img src="images/cross-black.svg" alt=""></div>
+                            <div class="modal-content">
+                                <ul class="list-group">
+                                    <li class="list-group-item" data-tab="micr-1">Учебники</li>
+                                    <li class="list-group-item" data-tab="micr-2">От кафедры</li>
+                                    <li class="list-group-item" data-tab="micr-3">Другое</li>
+                                </ul>
+
+                                <div class="modal__tab" data-tab-content id="micr-1">
+                                    <div class="modal__tab-content">
+                                    </div>
+                                </div>
+
+                                <div class="modal__tab hidden" data-tab-content id="micr-2">
+                                    <div class="modal__tab-content">
+                                    </div>
+                                </div>
+
+                                <div class="modal__tab hidden" data-tab-content id="micr-3">
+                                    <div class="modal__tab-content">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="modal__container" data-target="physiology">
+                            <div class="modal-close"><img src="images/cross-black.svg" alt=""></div>
+                            <div class="modal-content">
+                                <ul class="list-group">
+                                    <li class="list-group-item" data-tab="physiology-1">Учебники</li>
+                                    <li class="list-group-item" data-tab="physiology-2">От кафедры</li>
+                                    <li class="list-group-item" data-tab="physiology-3">Другое</li>
+                                </ul>
+
+                                <div class="modal__tab" data-tab-content id="physiology-1">
+                                    <div class="modal__tab-content">
+                                    </div>
+                                </div>
+
+                                <div class="modal__tab hidden" data-tab-content id="physiology-2">
+                                    <div class="modal__tab-content">
+                                    </div>
+                                </div>
+
+                                <div class="modal__tab hidden" data-tab-content id="physiology-3">
+                                    <div class="modal__tab-content">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="modal__container" data-target="gen-surgery">
+                            <div class="modal-close"><img src="images/cross-black.svg" alt=""></div>
+                            <div class="modal-content">
+                                <ul class="list-group">
+                                    <li class="list-group-item" data-tab="gen-surgery-1">Учебники</li>
+                                    <li class="list-group-item" data-tab="gen-surgery-2">От кафедры</li>
+                                    <li class="list-group-item" data-tab="gen-surgery-3">Другое</li>
+                                </ul>
+
+                                <div class="modal__tab" data-tab-content id="gen-surgery-1">
+                                    <div class="modal__tab-content">
+                                    </div>
+                                </div>
+
+                                <div class="modal__tab hidden" data-tab-content id="gen-surgery-2">
+                                    <div class="modal__tab-content">
+                                    </div>
+                                </div>
+
+                                <div class="modal__tab hidden" data-tab-content id="gen-surgery-3">
+                                    <div class="modal__tab-content">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="modal__container" data-target="path-anatomy">
+                            <div class="modal-close"><img src="images/cross-black.svg" alt=""></div>
+                            <div class="modal-content">
+                                <ul class="list-group">
+                                    <li class="list-group-item" data-tab="pathanat">Учебники</li>
+                                    <li class="list-group-item" data-tab="pathanat-2">От кафедры</li>
+                                    <li class="list-group-item" data-tab="pathanat-3">Другое</li>
+                                </ul>
+
+                                <div class="modal__tab" data-tab-content id="pathanat-1">
+                                    <div class="modal__tab-content">
+                                    </div>
+                                </div>
+
+                                <div class="modal__tab hidden" data-tab-content id="pathanat-2">
+                                    <div class="modal__tab-content">
+                                    </div>
+                                </div>
+
+                                <div class="modal__tab hidden" data-tab-content id="pathanat-3">
+                                    <div class="modal__tab-content">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="modal__container" data-target="path-physiology">
+                            <div class="modal-close"><img src="images/cross-black.svg" alt=""></div>
+                            <div class="modal-content">
+                                <ul class="list-group">
+                                    <li class="list-group-item" data-tab="pathphys-1">Учебники</li>
+                                    <li class="list-group-item" data-tab="pathphys-2">От кафедры</li>
+                                    <li class="list-group-item" data-tab="pathphys-3">Другое</li>
+                                </ul>
+
+                                <div class="modal__tab" data-tab-content id="pathphys-1">
+                                    <div class="modal__tab-content">
+                                    </div>
+                                </div>
+
+                                <div class="modal__tab hidden" data-tab-content id="pathphys-2">
+                                    <div class="modal__tab-content">
+                                    </div>
+                                </div>
+
+                                <div class="modal__tab hidden" data-tab-content id="pathphys-3">
+                                    <div class="modal__tab-content">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="modal__container" data-target="pvb">
+                            <div class="modal-close"><img src="images/cross-black.svg" alt=""></div>
+                            <div class="modal-content">
+                                <ul class="list-group">
+                                    <li class="list-group-item" data-tab="pvb-1">Учебники</li>
+                                    <li class="list-group-item" data-tab="pvb-2">От кафедры</li>
+                                    <li class="list-group-item" data-tab="pvb-3">Другое</li>
+                                </ul>
+
+                                <div class="modal__tab" data-tab-content id="pvb-1">
+                                    <div class="modal__tab-content">
+                                    </div>
+                                </div>
+
+                                <div class="modal__tab hidden" data-tab-content id="pvb-2">
+                                    <div class="modal__tab-content">
+                                    </div>
+                                </div>
+
+                                <div class="modal__tab hidden" data-tab-content id="pvb-3">
+                                    <div class="modal__tab-content">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="modal__container" data-target="pdb">
+                            <div class="modal-close"><img src="images/cross-black.svg" alt=""></div>
+                            <div class="modal-content">
+                                <ul class="list-group">
+                                    <li class="list-group-item" data-tab="pdb-1">Учебники</li>
+                                    <li class="list-group-item" data-tab="pdb-2">От кафедры</li>
+                                    <li class="list-group-item" data-tab="pdb-3">Другое</li>
+                                </ul>
+
+                                <div class="modal__tab" data-tab-content id="pdb-1">
+                                    <div class="modal__tab-content">
+                                    </div>
+                                </div>
+
+                                <div class="modal__tab hidden" data-tab-content id="pdb-2">
+                                    <div class="modal__tab-content">
+                                    </div>
+                                </div>
+
+                                <div class="modal__tab hidden" data-tab-content id="pdb-3">
+                                    <div class="modal__tab-content">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="modal__container" data-target="top-anatomy">
+                            <div class="modal-close"><img src="images/cross-black.svg" alt=""></div>
+                            <div class="modal-content">
+                                <ul class="list-group">
+                                    <li class="list-group-item" data-tab="topanat-1">Учебники</li>
+                                    <li class="list-group-item" data-tab="topanat-2">От кафедры</li>
+                                    <li class="list-group-item" data-tab="topanat-3">Другое</li>
+                                </ul>
+
+                                <div class="modal__tab" data-tab-content id="topanat-1">
+                                    <div class="modal__tab-content">
+                                    </div>
+                                </div>
+
+                                <div class="modal__tab hidden" data-tab-content id="topanat-2">
+                                    <div class="modal__tab-content">
+                                    </div>
+                                </div>
+
+                                <div class="modal__tab hidden" data-tab-content id="topanat-3">
+                                    <div class="modal__tab-content">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="modal__container" data-target="fac-therapy">
+                            <div class="modal-close"><img src="images/cross-black.svg" alt=""></div>
+                            <div class="modal-content">
+                                <ul class="list-group">
+                                    <li class="list-group-item" data-tab="factherapy-1">Учебники</li>
+                                    <li class="list-group-item" data-tab="factherapy-2">От кафедры</li>
+                                    <li class="list-group-item" data-tab="factherapy-3">Другое</li>
+                                </ul>
+
+                                <div class="modal__tab" data-tab-content id="factherapy-1">
+                                    <div class="modal__tab-content">
+                                    </div>
+                                </div>
+
+                                <div class="modal__tab hidden" data-tab-content id="factherapy-2">
+                                    <div class="modal__tab-content">
+                                    </div>
+                                </div>
+
+                                <div class="modal__tab hidden" data-tab-content id="factherapy-3">
+                                    <div class="modal__tab-content">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="modal__container" data-target="pharmacology">
+                            <div class="modal-close"><img src="images/cross-black.svg" alt=""></div>
+                            <div class="modal-content">
+                                <ul class="list-group">
+                                    <li class="list-group-item" data-tab="pharm-1">Учебники</li>
+                                    <li class="list-group-item" data-tab="pharm-2">От кафедры</li>
+                                    <li class="list-group-item" data-tab="pharm-3">Другое</li>
+                                </ul>
+
+                                <div class="modal__tab" data-tab-content id="pharm-1">
+                                    <div class="modal__tab-content">
+                                    </div>
+                                </div>
+
+                                <div class="modal__tab hidden" data-tab-content id="pharm-2">
+                                    <div class="modal__tab-content">
+                                    </div>
+                                </div>
+
+                                <div class="modal__tab hidden" data-tab-content id="pharm-3">
+                                    <div class="modal__tab-content">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="modal__container" data-target="philosophy">
+                            <div class="modal-close"><img src="images/cross-black.svg" alt=""></div>
+                            <div class="modal-content">
+                                <ul class="list-group">
+                                    <li class="list-group-item" data-tab="phil-1">Учебники</li>
+                                    <li class="list-group-item" data-tab="phil-2">От кафедры</li>
+                                    <li class="list-group-item" data-tab="phil-3">Другое</li>
+                                </ul>
+
+                                <div class="modal__tab" data-tab-content id="phil-1">
+                                    <div class="modal__tab-content">
+                                    </div>
+                                </div>
+
+                                <div class="modal__tab hidden" data-tab-content id="phil-2">
+                                    <div class="modal__tab-content">
+                                    </div>
+                                </div>
+
+                                <div class="modal__tab hidden" data-tab-content id="phil-3">
+                                    <div class="modal__tab-content">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="modal__container" data-target="chemistry">
+                            <div class="modal-close"><img src="images/cross-black.svg" alt=""></div>
+                            <div class="modal-content">
+                                <ul class="list-group">
+                                    <li class="list-group-item" data-tab="chem-1">Учебники</li>
+                                    <li class="list-group-item" data-tab="chem-2">От кафедры</li>
+                                    <li class="list-group-item" data-tab="chem-3">Другое</li>
+                                </ul>
+
+                                <div class="modal__tab" data-tab-content id="chem-1">
+                                    <div class="modal__tab-content">
+                                    </div>
+                                </div>
+
+                                <div class="modal__tab hidden" data-tab-content id="chem-2">
+                                    <div class="modal__tab-content">
+                                    </div>
+                                </div>
+
+                                <div class="modal__tab hidden" data-tab-content id="chem-3">
+                                    <div class="modal__tab-content">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
 
                     </div>
                             
