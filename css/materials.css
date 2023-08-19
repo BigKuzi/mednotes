@@ -13,19 +13,18 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    text-align: center;
     max-width: 1024px;
-    margin: 0 auto;
+    margin: auto;
     gap: 30px;
 }   
 
 .subjects-courses {
-    display: grid;
-    grid-template-columns: repeat(7, 1fr);
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
     gap: 10px;
     margin-bottom: 30px;
     cursor: pointer;
-    justify-items: center;
 }
 
 .course {
@@ -55,7 +54,7 @@
 
 .hide {
     animation-name: hide;
-    animation-duration: 0.5s;
+    animation-duration: 0.0001s;
     animation-fill-mode: forwards;
 }
 
@@ -87,7 +86,7 @@
     width: 320px;
     overflow: hidden;
     transition: 0.5s all;
-    margin: 0 auto;
+    margin: 0 0 auto;
 }
 
 .card__img {
@@ -353,10 +352,6 @@
         transform: translateY(0%);
     }
 
-    .subjects-courses {
-        grid-template-columns: repeat(4, 1fr);
-    }
-
     .card__img {
         max-height: 200px;
     }
@@ -371,18 +366,9 @@
 }
 
 @media (max-width:768px) {
-    .subjects-cards {
-        flex-direction: column;
-        align-items: center;
-    }
 }
 
 @media (max-width: 600px){
-
-    .subjects-courses {
-        grid-template-columns: repeat(3, 1fr);
-    }
-
     .file-btn {
         display: flex;
         flex-direction: column;
