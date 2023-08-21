@@ -1,28 +1,5 @@
 // Sort
 
-// const filterBox = document.querySelectorAll('.card');
-//     subjectsItems = document.querySelectorAll('.course')
-
-// document.querySelector('.subjects-nav').addEventListener('click', event => {
-//     if (event.target.tagName !== 'LI') return false;
-
-//     let filterClass = event.target.dataset['f'];
-
-//     const targetSubject = event.target
-
-//     subjectsItems.forEach(subjectItem => subjectItem.classList.remove('course-active'))
-//     targetSubject.classList.add('subjects-active')
-    
-//     filterBox.forEach (elem => {
-//         elem.classList.remove('hide');
-//         if (!elem.classList.contains(filterClass)&& filterClass!== 'all') {
-//             elem.classList.add('hide');
-//         }
-//     });
-    
-
-// });
-
 const courseActive = document.querySelectorAll('.course')
 
     function filter () {
