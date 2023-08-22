@@ -13,8 +13,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    align-items: flex-start;
-    margin: 0 auto;
+    align-items: flex-start;    
 }   
 
 .subjects-courses {
@@ -53,7 +52,7 @@
 
 .hide {
     animation-name: hide;
-    animation-duration: 0.0001s;
+    animation-duration: 0.1s;
     animation-fill-mode: forwards;
 }
 
@@ -64,12 +63,11 @@
     }
     100% {
         visibility: hidden;
-        display: none;
         width: 0;
         height: 0;
         max-width: 0;
         font-size: 0;
-        margin: 0 auto;
+        margin: 0;
     }
 }
 
@@ -157,7 +155,7 @@
     top: 0;
     bottom: 0;
     z-index: 1000;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(21, 21, 21, 0.5);
     cursor: pointer;
     overflow-y: auto;
     overflow-x: hidden;
