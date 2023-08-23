@@ -225,7 +225,8 @@
 
 .pdf,
 .cross,
-.word {
+.word,
+.scroll__btn {
     max-width: 40px;
 }
 
