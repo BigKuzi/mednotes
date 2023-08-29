@@ -1,186 +1,183 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="apple-touch-icon" sizes="180x180" href="/mednotes/files/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/mednotes/files/favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/mednotes/files/favicon-16x16.png">
-    <link rel="manifest" href="/site.webmanifest">
+    <link rel="apple-touch-icon" sizes="180x180" href="/mednotes/files/apple-touch-icon.png" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/mednotes/files/favicon/favicon-32x32.png"
+    />
+    <link rel="icon" type="image/png" sizes="16x16" href="/mednotes/files/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
     <link rel="stylesheet" href="css/style.css" />
     <title>MEDNOTES</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <div class="wrapper">
-        <!-- HEADER -->
-        <header class="header header-main">
-            <div class="container">
-                <div class="header__inner">
-                    <!-- LOGO -->
-                    <a class="logo" href="index.html">
-                        <img src="images/logo.png" alt="" />
-                    </a>
-                    <!-- NAVBAR -->
-                    <nav class="menu">
-                        <button class="menu__btn">
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                        </button>
-                        <ul class="menu__list">
-                            <li class="menu__list-item">
-                                <a href="index.html" class="menu__list-link">Главная</a>
-                            </li>
-                            <li class="menu__list-item">
-                                <a href="materials.html" class="menu__list-link">Материалы</a>
-                            </li>
-                            <li class="menu__list-item">
-                                <a href="upload.html" class="menu__list-link">Загрузить</a>
-                            </li>
-                            <li class="menu__list-item">
-                                <a href="other.html" class="menu__list-link">Дополнительно</a>
-                            </li>
-                        </ul>
-                    </nav>
-                </div>
+      <!-- HEADER -->
+      <header class="header header-main">
+        <div class="container">
+          <div class="header__inner">
+            <!-- LOGO -->
+            <a class="logo" href="index.html">
+              <img src="images/logo.png" alt="" />
+            </a>
+            <!-- NAVBAR -->
+            <nav class="menu">
+              <button class="menu__btn">
+                <span></span>
+                <span></span>
+                <span></span>
+              </button>
+              <ul class="menu__list">
+                <li class="menu__list-item">
+                  <a href="index.html" class="menu__list-link">Главная</a>
+                </li>
+                <li class="menu__list-item">
+                  <a href="materials.html" class="menu__list-link">Материалы</a>
+                </li>
+                <li class="menu__list-item">
+                  <a href="upload.html" class="menu__list-link">Загрузить</a>
+                </li>
+                <li class="menu__list-item">
+                  <a href="other.html" class="menu__list-link">Дополнительно</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </header>
+
+      <!-- MAIN -->
+      <main class="main">
+        <section class="top">
+          <div class="container">
+            <h1 class="title">Материалы для студентов</h1>
+            <a href="materials.html" class="top__link">Открыть</a>
+          </div>
+        </section>
+
+        <div class="slider">
+          <div class="swiper">
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide" style="background-image: url(images/slide1.jpg)"></div>
+              <div class="swiper-slide" style="background-image: url(images/slide2.jpg)"></div>
+              <div class="swiper-slide" style="background-image: url(images/slide3.jpg)"></div>
+              <div class="swiper-slide" style="background-image: url(images/slide4.jpg)"></div>
             </div>
-        </header>
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
 
-        <!-- MAIN -->
-        <main class="main">
-            
-            <section class="top">
-                <div class="container">
-                    <h1 class="title">Материалы для студентов</h1>
-                    <a href="materials.html" class="top__link">Открыть</a>
-                </div>
-            </section>
-
-            <div class="slider">
-                <div class="swiper">
-                    <div class="swiper-wrapper">
-                        <!-- Slides -->
-                        <div class="swiper-slide" style="background-image: url(images/slide1.jpg);"></div>
-                        <div class="swiper-slide" style="background-image: url(images/slide2.jpg);"></div>
-                        <div class="swiper-slide" style="background-image: url(images/slide3.jpg);"></div>
-                        <div class="swiper-slide" style="background-image: url(images/slide4.jpg);"></div>
-                    </div>
-                    <div class="swiper-pagination"></div>
-                </div>
+        <section class="description">
+          <div class="container">
+            <h2 class="section-title">Что это за сайт?</h2>
+            <div class="description-item">
+              <p class="description-text">
+                Добро пожаловать на сайт для студентов-медиков - кладезь знаний, которые помогут вам
+                повысить эффективность обучения и добиться успехов в учебе!
+              </p>
             </div>
+          </div>
+        </section>
 
-            <section class="description">
-                <div class="container">
-                    <h2 class="section-title">Что это за сайт?</h2>
-                    <div class="description-item">
-                        <p class="description-text">Добро пожаловать на сайт для студентов-медиков - кладезь знаний, которые помогут вам повысить эффективность обучения и добиться успехов в учебе!</p>
-                    </div>
-                </div>
-            </section>
+        <section class="what-is">
+          <div class="container">
+            <h2 class="section-title">Что есть на этом сайте?</h2>
+            <ul class="what-is__list">
+              <li class="what-is__item">
+                <img class="what-is__item-img" src="images/what-is-1.png" alt="" />
+                <h3 class="what-is__item-title">Записи</h3>
+                <p class="what-is__item-text">Конспекты, лекционные материалы и т.д.</p>
+              </li>
+              <li class="what-is__item">
+                <img class="what-is__item-img" src="images/what-is-2.png" alt="" />
+                <h3 class="what-is__item-title">Учебники и атласы</h3>
+                <p class="what-is__item-text">По многим специальностям в удобном pdf формате</p>
+              </li>
+              <li class="what-is__item">
+                <img class="what-is__item-img" src="images/what-is-3.png" alt="" />
+                <h3 class="what-is__item-title">Файлы</h3>
+                <p class="what-is__item-text">
+                  Методические рекомендации, шаблоны для распечатки и др. в разных форматах
+                </p>
+              </li>
+              <li class="what-is__item">
+                <img class="what-is__item-img" src="images/what-is-4.png" alt="" />
+                <h3 class="what-is__item-title">Другое</h3>
+                <p class="what-is__item-text">
+                  Предложи сам, чем можно дополнить базу - напиши автору!
+                </p>
+              </li>
+            </ul>
+          </div>
+        </section>
+      </main>
 
-            <section class="what-is">
-                <div class="container">
-                    <h2 class="section-title">Что есть на этом сайте?
-                    </h2>
-                    <ul class="what-is__list">
-                        <li class="what-is__item">
-                            <img class="what-is__item-img" src="images/what-is-1.png" alt="">
-                            <h3 class="what-is__item-title">
-                                Записи
-                            </h3>
-                            <p class="what-is__item-text">
-                                Lorem ipsum dolor sit amet.
-                            </p>
-                        </li>
-                        <li class="what-is__item">
-                            <img class="what-is__item-img" src="images/what-is-2.png" alt="">
-                            <h3 class="what-is__item-title">
-                                Учебники
-                            </h3>
-                            <p class="what-is__item-text">
-                                Lorem ipsum dolor sit amet.
-                            </p>
-                        </li>
-                        <li class="what-is__item">
-                            <img class="what-is__item-img" src="images/what-is-3.png" alt="">
-                            <h3 class="what-is__item-title">
-                                Файлы
-                            </h3>
-                            <p class="what-is__item-text">
-                                Lorem ipsum dolor sit amet.
-                            </p>
-                        </li>
-                        <li class="what-is__item">
-                            <img class="what-is__item-img" src="images/what-is-4.png" alt="">
-                            <h3 class="what-is__item-title">
-                                Другое
-                            </h3>
-                            <p class="what-is__item-text">
-                                Lorem ipsum dolor sit amet.
-                            </p>
-                        </li>
-                    </ul>
-                </div>
-            </section>
-
-        </main>
-
-        <!-- FOOTER -->
-        <footer class="footer">
-            <div class="container">
-              <div class="footer__menu">
-                <ul class="footer__menu-list">
-                  <li class="footer__menu-item">
-                    <p class="footer__menu-title">Автор</p>
-                  </li>
-                  <li class="footer__menu-item">
-                    <a href="https://vk.com/biguzikuzi" class="footer__menu-link" target="_blank">Страница ВК</a>
-                  </li>
-                  <li class="footer__menu-item">
-                    <a href="https://vk.com/bigkuzi" class="footer__menu-link" target="_blank">Группа ВК</a>
-                  </li>
-                  <li class="footer__menu-item">
-                    <a href="https://t.me/BigKuzi" class="footer__menu-link" target="_blank">Телеграмм</a>
-                  </li>
-                </ul>
-                <ul class="footer__menu-list">
-                  <li class="footer__menu-item">
-                    <p class="footer__menu-title">Информация</p>
-                  </li>
-                  <li class="footer__menu-item">
-                    <a href="#" class="footer__menu-link">Тут</a>
-                  </li>
-                  <li class="footer__menu-item">
-                    <a href="#" class="footer__menu-link">Пока</a>
-                  </li>
-                  <li class="footer__menu-item">
-                    <a href="#" class="footer__menu-link">Пусто</a>
-                  </li>
-                </ul>
-                <ul class="footer__menu-list">
-                  <li class="footer__menu-item">
-                    <p class="footer__menu-title">Другое</p>
-                  </li>
-                  <li class="footer__menu-item">
-                    <a href="#" class="footer__menu-link">Тут</a>
-                  </li>
-                  <li class="footer__menu-item">
-                    <a href="#" class="footer__menu-link">Тоже</a>
-                  </li>
-                  <li class="footer__menu-item">
-                    <a href="#" class="footer__menu-link">Пусто</a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-        </footer>
+      <!-- FOOTER -->
+      <footer class="footer">
+        <div class="container">
+          <div class="footer__menu">
+            <ul class="footer__menu-list">
+              <li class="footer__menu-item">
+                <p class="footer__menu-title">Автор</p>
+              </li>
+              <li class="footer__menu-item">
+                <a href="https://vk.com/biguzikuzi" class="footer__menu-link" target="_blank"
+                  >Страница ВК</a
+                >
+              </li>
+              <li class="footer__menu-item">
+                <a href="https://vk.com/bigkuzi" class="footer__menu-link" target="_blank"
+                  >Группа ВК</a
+                >
+              </li>
+              <li class="footer__menu-item">
+                <a href="https://t.me/BigKuzi" class="footer__menu-link" target="_blank"
+                  >Телеграмм</a
+                >
+              </li>
+            </ul>
+            <ul class="footer__menu-list">
+              <li class="footer__menu-item">
+                <p class="footer__menu-title">Информация</p>
+              </li>
+              <li class="footer__menu-item">
+                <a href="#" class="footer__menu-link">Тут</a>
+              </li>
+              <li class="footer__menu-item">
+                <a href="#" class="footer__menu-link">Пока</a>
+              </li>
+              <li class="footer__menu-item">
+                <a href="#" class="footer__menu-link">Пусто</a>
+              </li>
+            </ul>
+            <ul class="footer__menu-list">
+              <li class="footer__menu-item">
+                <p class="footer__menu-title">Другое</p>
+              </li>
+              <li class="footer__menu-item">
+                <a href="#" class="footer__menu-link">Тут</a>
+              </li>
+              <li class="footer__menu-item">
+                <a href="#" class="footer__menu-link">Тоже</a>
+              </li>
+              <li class="footer__menu-item">
+                <a href="#" class="footer__menu-link">Пусто</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </footer>
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
     <script src="js/main.js"></script>
-</body>
-
+  </body>
 </html>
